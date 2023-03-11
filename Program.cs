@@ -3,11 +3,11 @@ using System.IO;
 using System.Diagnostics;
 
 var xml =
-    new XElement("Something",
-        new XAttribute("Att", "s"),
-        new XAttribute("Att2", "gg"),
-        new XElement("AnotherSomething"),
-        new XElement("AnotherSomething"));
+    new XElement("MichaelHatfield",
+        new XAttribute("HairColor", "red"),
+        new XAttribute("Smell", "poop"),
+        new XElement("Skills"),
+        new XElement("Fruits"));
 
 File.WriteAllText("something.xml", xml.ToString());
 var fileText = File.ReadAllText("something.xml");
